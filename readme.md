@@ -28,11 +28,6 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 # CSS alternatives
 
-| Feature              | PURE CSS       | JS IN CSS                   |
-|----------------------|----------------|-----------------------------|
-| Usability            | Easiest to use | Can have more customization |
-| Organization of code | It becomes
-
 ## Pure CSS with css modules
 
 **PROS**
