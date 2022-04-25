@@ -1,11 +1,13 @@
-# Build backends
+# Reactの構成についての考察
 
-Bundles:
+## Build backends
+
+### Bundles
 
 - webpack
 - parcel
 
-## Build time
+### Build time
 
 Reference: https://blog.jakoblind.no/parcel-webpack/
 
@@ -15,7 +17,7 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 | Second build | 8,741   | 2s     |
 
 
-## Features
+### Features
 
 | Feature                                  | Webpack                                           | Parcel                                                |
 |------------------------------------------|---------------------------------------------------|-------------------------------------------------------|
@@ -25,10 +27,21 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 | Customization capabilities               | Highly available                                  | Very minimal                                          |
 | Community and Usage                      | High                                              | Low
 
+---
 
-# CSS alternatives
+## CSS alternatives
 
-## Pure CSS with css modules
+### Bundles
+
+- Pure CSS with css modules
+- CSS in Typescript
+    - Styled Components
+    - Emotion
+    - Please add...
+
+### Pure CSS with css modules
+
+##### PROS & CONS
 
 **PROS**
 
@@ -41,7 +54,9 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 - Can't use javascript, so can't have as much customization.
 - To organize code, have to create a css file for every component, so project ends with a lot of extra files.
 
-## Javascript in CSS
+### CSS in Typescript
+
+##### PROS & CONS
 
 **PROS**
 
@@ -56,6 +71,52 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 - It's harder to use, requires to learn the library and UI Frameworks with use js in css also makes components customization harder than pure css.
 - Since everything becomes a component, It's harder to change html tag element, for example from `div` to `p`
 
+#### Styled Components
 
+##### Features
 
+##### PROS & CONS
 
+**PROS**
+
+**CONS**
+
+#### Emotion
+
+##### Features
+
+##### PROS & CONS
+
+**PROS**
+
+**CONS**
+
+---
+
+## State Store
+
+### Bundles
+
+- Redux
+- Mobx
+- Please add...
+
+#### Redux
+
+##### Features
+
+##### PROS & CONS
+
+**PROS**
+
+**CONS**
+
+#### Mobx
+
+##### Features
+
+##### PROS & CONS
+
+**PROS**
+
+**CONS**
