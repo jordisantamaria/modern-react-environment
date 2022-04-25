@@ -25,7 +25,7 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 | Handling pre-processors and dependencies | Requires configurations                           | Does not require configurations                       |
 | Speed of bundling                        | First bundle speed is lower but similar to parcel | After first bundle, speed is much faster than webpack |
 | Customization capabilities               | Highly available                                  | Very minimal                                          |
-| Community and Usage                      | High                                              | Low
+| Community and Usage                      | High                                              | Low |
 
 ---
 
@@ -75,11 +75,20 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 ##### Features
 
+- **Automatic critical CSS**: Only load css of commponents rendered in page.
+- **No class name bugs**: Unique class names for your styles, no duplication.
+- **Easier deletion of CSS**: it can be hard to know whether a class name is used somewhere in your codebase. styled-components makes it obvious, as every bit of styling is tied to a specific component. If the component is unused (which tooling can detect) and gets deleted, all its styles get deleted with it.
+- **Simple dynamic styling**: adapting the styling of a component based on its props or a global theme is simple and intuitive without having to manually manage dozens of classes.
+- **Painless maintenance**: you never have to hunt across different files to find the styling affecting your component, so maintenance is a piece of cake no matter how big your codebase is.
+- **Automatic vendor prefixing**: write your CSS to the current standard and let styled-components handle the rest.
+
 ##### PROS & CONS
 
 **PROS**
 
 **CONS**
+
+- Se tiene que crear un nuevo componente cada vez que se quiere cambiar algun estilo del componente o incluirlo en style inline.
 
 #### Emotion
 
