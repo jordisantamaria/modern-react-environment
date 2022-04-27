@@ -86,6 +86,7 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 **PROS**
 
+
 **CONS**
 
 - Se tiene que crear un nuevo componente cada vez que se quiere cambiar algun estilo del componente o incluirlo en style inline.
@@ -98,7 +99,12 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 **PROS**
 
+- Ademas de poder crear componentes igual que styled, tenemos una prop llamada css donde podemos poner estilos y se 
+  convierte en clases de estilo lo que lo hace mucho mas comodo.
+- El framework mas popular de css in js que seria material UI tiene mejor soporte con emotion.
+
 **CONS**
+
 
 ---
 
