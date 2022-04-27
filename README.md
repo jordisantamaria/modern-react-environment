@@ -9,23 +9,25 @@
 
 ### Build time
 
-Reference: https://blog.jakoblind.no/parcel-webpack/
+Comparation with minimal project of both samples, with-parcel and with-webpack-esbuild-loader.
+
+If there is some change done, second build time is again same as first build, so don't seems very useful this reduction of time.
 
 |              | Webpack | Parcel |
 |--------------|---------|--------|
-| First build  | 8.868s  | 9.45s  |
-| Second build | 8,741   | 2s     |
+| First build  | 1.01    | 2.41   |
+| Second build | 1.01    | 0.67   |
 
 
 ### Features
 
-| Feature                                  | Webpack                                           | Parcel                                                |
-|------------------------------------------|---------------------------------------------------|-------------------------------------------------------|
-| Zero configuration                       | Available with limited options                    | Available                                             |
-| Handling pre-processors and dependencies | Requires configurations                           | Does not require configurations                       |
-| Speed of bundling                        | First bundle speed is lower but similar to parcel | After first bundle, speed is much faster than webpack |
-| Customization capabilities               | Highly available                                  | Very minimal                                          |
-| Community and Usage                      | High                                              | Low |
+| Feature                                  | Webpack                        | Parcel                                |
+|------------------------------------------|--------------------------------|---------------------------------------|
+| Zero configuration                       | Available with limited options | Available                             |
+| Handling pre-processors and dependencies | Requires configurations        | Does not require configurations       |
+| Speed of bundling                        | Webpack is much faster         | Parcel is more fast after first build |
+| Customization capabilities               | Highly available               | Very minimal                          |
+| Community and Usage                      | High                           | Low                                   |
 
 ---
 
@@ -89,7 +91,7 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 **CONS**
 
-- Se tiene que crear un nuevo componente cada vez que se quiere cambiar algun estilo del componente o incluirlo en style inline.
+- It have to create a new component every time we want to change some style or include it as inline styles.
 
 #### Emotion
 
@@ -99,9 +101,8 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 **PROS**
 
-- Ademas de poder crear componentes igual que styled, tenemos una prop llamada css donde podemos poner estilos y se 
-  convierte en clases de estilo lo que lo hace mucho mas comodo.
-- El framework mas popular de css in js que seria material UI tiene mejor soporte con emotion.
+- It can create components same as styled, but It also offers a css prop to create classnames, so It's more flexible and easy to use.
+- The most popular framework of css in js (material UI) is supporting emotion.
 
 **CONS**
 
@@ -110,28 +111,25 @@ Reference: https://blog.jakoblind.no/parcel-webpack/
 
 ## State Store
 
-### Bundles
+#### Redux vs Mobx
 
-- Redux
-- Mobx
-- Please add...
+- Mobx is more easier to learn.
+- Mobx is easier to use and code becomes more simple, we just need an store with actions and components just use that, 
+  It doesn't require to include reducers and action types, just call the action method and It works.
+- Survey of state of javascript of 2020 says new users prefer to use mobx over redux for new projects https://2020.stateofjs.com/en-US/technologies/datalayer/
+- Mobx allow use multiple stores.
+- In redux, have to keep state immutable or It will not work, mobx state is mutable so don't have this problem.
 
-#### Redux
 
-##### Features
+---
 
-##### PROS & CONS
+# Conclusion
 
-**PROS**
-
-**CONS**
-
-#### Mobx
-
-##### Features
-
-##### PROS & CONS
-
-**PROS**
-
-**CONS**
+ 
+| Framework            | React      |
+|----------------------|------------|
+| Language             | Typescript |
+| Node package Manager | yarn       |
+| Build Bundler        | webpack    |
+| CSS Management       | Emotion    |
+| State Store          | Mobx       |
