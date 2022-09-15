@@ -97,6 +97,8 @@ If there is some change done, second build time is again same as first build, so
 
 ##### Features
 
+- CSS prop or styled function.
+
 ##### PROS & CONS
 
 **PROS**
@@ -111,25 +113,48 @@ If there is some change done, second build time is again same as first build, so
 
 ## State Store
 
-#### Redux vs Mobx
+#### Redux vs Mobx vs Recoil
 
-- Mobx is more easier to learn.
-- Mobx is easier to use and code becomes more simple, we just need an store with actions and components just use that, 
+- Mobx is  easier to learn.
+- Mobx is easier to use and code becomes more simple, we just need an store with actions and components just use that,
   It doesn't require to include reducers and action types, just call the action method and It works.
-- Survey of state of javascript of 2020 says new users prefer to use mobx over redux for new projects https://2020.stateofjs.com/en-US/technologies/datalayer/
 - Mobx allow use multiple stores.
 - In redux, have to keep state immutable or It will not work, mobx state is mutable so don't have this problem.
+- Recoil is very simple, It just work as another hook similar as useState.
+- Recoil library size is more lightest.
 
+## Formulary state management
+
+### React-hook-form
+
+Performant, flexible and extensible forms with easy-to-use validation.
+
+- Performance: Minimizes the number of re-renders, minimizes validate computation and faster mounting.
+- UX: Striving to provide the best user experience and bringing consistent validation strategies.
+- Super Light: React Hook Form is a tiny library without any dependencies.
+- Subscription: Subscribe to invidual input state without re-rendering the entire form.
+
+## UI components
+
+### MUI
+
+- Very complete with components for every use case.
+- Unstyled version for easy customization.
+- Accessible components.
+- Purchasing templates for faster development.
+- Purchasing Design components by Figma, Adobe XD and Sketch.
 
 ---
 
 # Conclusion
 
- 
-| Framework            | React      |
-|----------------------|------------|
-| Language             | Typescript |
-| Node package Manager | yarn       |
-| Build Bundler        | webpack    |
-| CSS Management       | Emotion    |
-| State Store          | Mobx       |
+
+| Framework            | React           |
+|----------------------|------------     |
+| Language             | Typescript      |
+| Node package Manager | yarn            |
+| Build Bundler        | webpack         |
+| CSS Management       | Emotion         |
+| State Store          | Recoil          |
+| Forms state          | react-hook-form |
+| UI components        | MUI             |
