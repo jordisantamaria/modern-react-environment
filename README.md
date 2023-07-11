@@ -39,7 +39,6 @@ If there is some change done, second build time is again same as first build, so
 - CSS in Typescript
     - Styled Components
     - Emotion
-    - Please add...
 
 ### Pure CSS with css modules
 
@@ -149,12 +148,13 @@ Performant, flexible and extensible forms with easy-to-use validation.
 # Conclusion
 
 
-| Framework            | React           |
-|----------------------|------------     |
-| Language             | Typescript      |
-| Node package Manager | yarn            |
-| Build Bundler        | webpack         |
-| CSS Management       | Emotion         |
-| State Store          | Recoil          |
-| Forms state          | react-hook-form |
-| UI components        | MUI             |
+| Framework            | React                     |
+|----------------------|---------------------------|
+| Language             | Typescript                |
+| Node package Manager | yarn                      |
+| Build Bundler        | webpack                   |
+| CSS Management       | Emotion, Tailwind         |
+| State Store          | Recoil                    |
+| Forms state          | react-hook-form           |
+| UI components        | MUI                       |
+| Integracion backend  | React query               |
