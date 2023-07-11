@@ -157,4 +157,4 @@ Performant, flexible and extensible forms with easy-to-use validation.
 | State Store          | Recoil                    |
 | Forms state          | react-hook-form           |
 | UI components        | MUI                       |
-| Integracion backend  | React query               |
+| Backend Integration  | React query               |
