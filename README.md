@@ -163,7 +163,17 @@ Performant, flexible and extensible forms with easy-to-use validation.
 - Purchasing templates for faster development.
 - Purchasing Design components by Figma, Adobe XD and Sketch.
 
----
+### Shadcn
+
+**PROS**
+
+- Only have the components you are going to use on your project, so reduced boilerplate size
+- You own the components, so can be customizable as you want
+
+**CONS**
+
+- It's minimalist in comperation with others like MUI, so It may not have a solution for everything, even If It's still complete enough.
+- It's very new so most of the projects still not using It, so developers have to learn how It works.
 
 ## Frameworks
 
@@ -188,6 +198,11 @@ It improves a lot development speed, because write backend becomes very easy and
 It's much easier to manage state, so It also helps to have less bugs.
 It can also be used as an API Rest.
 
+## Templates
+
+- Remix: https://github.com/epicweb-dev/epic-stack
+- Nextjs: https://github.com/ixartz/Next-js-Boilerplate
+
 # Conclusion
 
 
@@ -199,6 +214,6 @@ It can also be used as an API Rest.
 | CSS Management       | Tailwind                  |
 | State Store          | Recoil                    |
 | Forms state          | react-hook-form           |
-| UI components        | MUI                       |
+| UI components        | Shadcn                    |
 | Backend Integration  | React query               |
 | Framework            | Remix                     |
