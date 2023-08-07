@@ -1,4 +1,4 @@
-# Reactの構成についての考察
+# Modern react environment
 
 ## Build backends
 
@@ -6,6 +6,7 @@
 
 - webpack
 - parcel
+- Vite
 
 ### Build time
 
@@ -31,6 +32,11 @@ If there is some change done, second build time is again same as first build, so
 
 ---
 
+## Vite
+
+Build time is similar as webpack.
+But, It starts a dev server much faster than any other build tools like webpack, also Hot module replacement is much faster.
+
 ## CSS alternatives
 
 ### Bundles
@@ -39,7 +45,6 @@ If there is some change done, second build time is again same as first build, so
 - CSS in Typescript
     - Styled Components
     - Emotion
-    - Please add...
 
 ### Pure CSS with css modules
 
@@ -108,7 +113,21 @@ If there is some change done, second build time is again same as first build, so
 
 **CONS**
 
+### Tailwind
 
+#### Features
+
+- Atomic classes created automatically as you required them
+
+**PROS**
+
+- Use the minimum css created, reducing bundle size for page speed
+- Easier to write and read code, code size is reduced so If you underrstand tailwind, you can read It faster and write faster
+
+**CONS**
+
+- Every html tag have a lot of classes, It increase html size so affects negatively to SEO
+- When debug the website looking at production code, It's hard to notice which component and file is related, because generic classes.
 ---
 
 ## State Store
@@ -144,17 +163,57 @@ Performant, flexible and extensible forms with easy-to-use validation.
 - Purchasing templates for faster development.
 - Purchasing Design components by Figma, Adobe XD and Sketch.
 
----
+### Shadcn
+
+**PROS**
+
+- Only have the components you are going to use on your project, so reduced boilerplate size
+- You own the components, so can be customizable as you want
+
+**CONS**
+
+- It's minimalist in comperation with others like MUI, so It may not have a solution for everything, even If It's still complete enough.
+- It's very new so most of the projects still not using It, so developers have to learn how It works.
+
+## Frameworks
+
+### Nextjs
+
+It was the best option for long time, so It's still the most used framework, It's still good so I won't recommend to migrate to It, but give a try to better choices for new projects.
+It provides SSR to improve page speed and SEO.
+
+### Vite + React router
+
+It's similar as Nextjs but without SSR, the advantatge is thanks to Vite dev servers loads faster so improve development experience.
+But not having SSR, SEO gets worse.
+
+### Remix
+
+It's the modern way to develop websites, It's very new so most of the projects didn't migrate to It yet.
+It have the advantatge of both, have SSR and It´s also using Vite.
+It's a full stack solution, It can provide backend and frontend.
+It improves a lot page speed when you integrate backend, because you don't have to make a request to an external backend.
+Also thanks to manage frontend and backend, It can pre-fetch not only html, also fetch data, so page transitions can be instant.
+It improves a lot development speed, because write backend becomes very easy and backend integration becomes very easy also.
+It's much easier to manage state, so It also helps to have less bugs.
+It can also be used as an API Rest.
+
+## Templates
+
+- Remix: https://github.com/epicweb-dev/epic-stack
+- Nextjs: https://github.com/ixartz/Next-js-Boilerplate
 
 # Conclusion
 
 
-| Framework            | React           |
-|----------------------|------------     |
-| Language             | Typescript      |
-| Node package Manager | yarn            |
-| Build Bundler        | webpack         |
-| CSS Management       | Emotion         |
-| State Store          | Recoil          |
-| Forms state          | react-hook-form |
-| UI components        | MUI             |
+| Framework            | React                     |
+|----------------------|---------------------------|
+| Language             | Typescript                |
+| Node package Manager | yarn                      |
+| Build Bundler        | Vite                      |
+| CSS Management       | Tailwind                  |
+| State Store          | Recoil                    |
+| Forms state          | react-hook-form           |
+| UI components        | Shadcn                    |
+| Backend Integration  | React query               |
+| Framework            | Remix                     |
